@@ -1,11 +1,17 @@
-import React from 'react'
+import React from "react";
+import { Route, Router, Routes } from "react-router-dom";
+import Home from "./home/Home";
+import Single from "./pages/single/Single";
 
 const App = () => {
   return (
     <div>
-      <div>Astagfirullah ALlohim ozinga shukur. behisop shukur</div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/single" element={<Single />} />
+      </Routes>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
